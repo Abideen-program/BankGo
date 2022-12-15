@@ -15,6 +15,9 @@ body {
   background: #f3f3f3;
   height: 100vh;
   padding: 2rem;
+  border: 1px solid red;
+  width: 100%;
+  /* overflow-x: hidden; */
 }
 
 nav {
@@ -84,7 +87,7 @@ nav {
   display: grid;
   grid-template-columns: 4fr 3fr;
   grid-template-rows: auto repeat(3, 15rem) auto;
-  opacity: 0;
+  /* opacity: 0; */
   transition: all 1s;
 }
 
@@ -114,6 +117,7 @@ nav {
 
 /* MOVEMENTS */
 .movements {
+  width: 55rem;
   grid-row: 2 / span 3;
   background: #fff;
   border-radius: 1rem;
@@ -198,6 +202,7 @@ nav {
 
 /* OPERATIONS */
 .operation {
+  width: 35rem;
   border-radius: 1rem;
   padding: 3rem 4rem;
   color: #333;
@@ -286,4 +291,67 @@ h2 {
 
 .timer {
   font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .welcome {
+    font-size: 1.7rem;
+  }
+
+  nav {
+    padding: 0 3rem;
+  }
+
+  .app {
+    padding: 0 3rem 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .balance {
+    justify-content: space-around;
+  }
+  .movements {
+    width: 43rem;
+    margin-right: 5rem;
+  }
+
+  .movements__row {
+    padding: 2.25rem 3rem;
+  }
+
+  .operation {
+    width: 23rem;
+    padding: 3rem 1.5rem;
+    transform: translateX(-60px);
+    margin-left: 2rem;
+  }
+
+  .form__label {
+    font-size: 1.1rem;
+  }
+
+  .summary {
+    padding: 0 0.2rem;
+  }
+
+  .summary__label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 0.8rem;
+  }
+
+  .summary__value {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+
+  .btn--sort {
+    margin-left: 1rem;
+  }
+
+  .balance__value {
+    font-size: 3.5rem;
+  }
 }
