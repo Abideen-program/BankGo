@@ -6,10 +6,10 @@ The app is build with 4 users' data. Each user can make normal bank transactions
 
 Login details of each user includes
 
-User 1: => js (USER), 1111 (PIN)
+User 1: => AO (USER), 1111 (PIN)
 
-User 2: => jd (USER), 2222 (PIN)
+User 2: => HO (USER), 2222 (PIN)
 
-User 3: => stw (USER), 3333 (PIN)
+User 3: => UAO (USER), 3333 (PIN)
 
-User 4: => ss (USER), 4444 (PIN)
+User 4: => AA (USER), 4444 (PIN)
