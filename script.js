@@ -285,7 +285,7 @@ const logInUser = e => {
   e.preventDefault();
   //find the current account that was logged in
   currentAccount = accounts.find(
-    acc => acc.username === inputLoginUsername.value
+    acc => acc.username === inputLoginUsername.value.toLowerCase()
   );
 
   if (currentAccount?.pin === Number(inputLoginPin.value)) {
