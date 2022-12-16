@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,7 +18,6 @@ body {
   padding: 2rem;
   border: 1px solid red;
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 nav {
@@ -122,6 +122,7 @@ nav {
   background: #fff;
   border-radius: 1rem;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .movements__row {
@@ -311,6 +312,7 @@ h2 {
   .balance {
     justify-content: space-around;
   }
+
   .movements {
     width: 43rem;
     margin-right: 5rem;
@@ -335,13 +337,6 @@ h2 {
     padding: 0 0.2rem;
   }
 
-  .summary__label {
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-right: 0.8rem;
-  }
-
   .summary__value {
     font-size: 1.8rem;
     margin-right: 1rem;
@@ -353,5 +348,105 @@ h2 {
 
   .balance__value {
     font-size: 3.5rem;
+  }
+
+  .logout-timer {
+    text-align: left;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    padding: 1rem;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  .welcome {
+    margin-bottom: 0.4rem;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  .login {
+    display: flex;
+  }
+
+  .login__input {
+    padding: 0.5rem 2rem;
+    width: 8rem;
+  }
+
+  .login__btn {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .app {
+    display: block;
+  }
+
+  .balance {
+    display: block;
+    text-align: center;
+  }
+
+  .balance__value {
+    font-size: 3.5rem;
+  }
+
+  .movements {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .movements__row {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+  }
+
+  .movements__type {
+    font-size: 1rem;
+    padding: 0.1rem 0.6rem;
+    margin-right: 1.5rem;
+  }
+
+  .movements__date {
+    font-size: 1rem;
+  }
+
+  .movements__value {
+    font-size: 1.2rem;
+  }
+  
+  .summary__label {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .summary__value {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .btn--sort {
+    display: block;
+  }
+
+  .operation {
+    width: 90%;
+    transform: translateX(0);
+    margin-left: 0;
+  }
+
+  .logout-timer {
+    text-align: center;
   }
 }
